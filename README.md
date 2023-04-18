@@ -1,7 +1,9 @@
 # ExtremeTicTacToe
 Extreme Tic-Tac-Toe is the best way to play Tic-Tac-Toe!
 
-The game is coded in Java using the JavaFX library
+The game is coded in Java using the JavaFX library and SceneBuilder
+
+My friends and I used to play this game on a chalk board and always found ourselves messing up the turns or forgetting where to go. I coded this game to make it easier to reset, play, and understand while still having fun!
 
 # Instructions
 • The board is made up of 9 tiles, each consiting of its own Sub-Board made up of its own 9 tiles
