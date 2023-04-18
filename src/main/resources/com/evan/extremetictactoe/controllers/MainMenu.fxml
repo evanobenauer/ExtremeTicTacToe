@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="background" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.evan.extremetictactoe.controllers.MainMenuController">
+   <children>
+      <Text fx:id="title" fontSmoothingType="LCD" layoutX="116.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Extreme Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="367.3066711425781">
+         <font>
+            <Font name="Segoe UI Light Italic" size="44.0" />
+         </font>
+      </Text>
+      <Accordion prefHeight="285.0" prefWidth="134.0">
+        <panes>
+          <TitledPane prefHeight="282.0" prefWidth="134.0" text="Settings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="256.0" prefWidth="132.0" visible="false">
+                     <children>
+                        <Accordion layoutX="-4.0" prefHeight="260.0" prefWidth="134.0">
+                          <panes>
+                            <TitledPane text="Names &amp; Avatars">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="262.0" prefWidth="132.0">
+                                       <children>
+                                          <Text layoutX="6.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1:" />
+                                          <TextField fx:id="player1Name" layoutX="52.0" layoutY="1.0" onKeyTyped="#onPlayer1Name" prefHeight="25.0" prefWidth="80.0" promptText="Name" />
+                                          <Text layoutX="2.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2:" />
+                                          <TextField fx:id="player2Name" layoutX="50.0" layoutY="104.0" onKeyTyped="#onPlayer2Name" prefHeight="25.0" prefWidth="80.0" promptText="Name" />
+                                          <Text layoutX="10.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avatar:" />
+                                          <Text layoutX="10.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avatar:" />
+                                          <Button fx:id="player1Avatar" layoutX="52.0" layoutY="33.0" mnemonicParsing="false" onAction="#onPlayer1Avatar" text="Choose...">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fx:id="player1AvatarImage" fitHeight="42.0" fitWidth="46.0" layoutX="7.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../board/x.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="player2AvatarImage" fitHeight="42.0" fitWidth="46.0" layoutX="7.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../board/o.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Button fx:id="player2Avatar" layoutX="52.0" layoutY="136.0" mnemonicParsing="false" onAction="#onPlayer2Avatar" text="Choose...">
+                                             <font>
+                                                <Font size="9.0" />
+                                             </font>
+                                          </Button>
+                                       </children></AnchorPane>
+                              </content>
+                            </TitledPane>
+                            <TitledPane text="Theme">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <RadioButton fx:id="lightMode" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#setTheme" selected="true" text="Light">
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="lightDarkGroup" />
+                                             </toggleGroup></RadioButton>
+                                          <RadioButton fx:id="darkMode" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#setTheme" text="Dark" toggleGroup="$lightDarkGroup" />
+                                       </children></AnchorPane>
+                              </content>
+                            </TitledPane>
+                          </panes>
+                        </Accordion>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="playButton" layoutX="259.0" layoutY="219.0" mnemonicParsing="false" onAction="#onPlayButton" text="Play!">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
