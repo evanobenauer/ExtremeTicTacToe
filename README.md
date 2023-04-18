@@ -10,9 +10,15 @@ The game is coded in Java using the JavaFX library
 
 # Rules
 • Player 1 will go first
+
    • Player 1 will place their piece anywhere on the board
+   
 • Player 2 will go next
+
    • Player 2 will be able to put their piece in the Sub-Board that corresponds to the tile that Player 1 had placed their piece
+   
 • Player 1 will go next
+
    • Player 1 will be able to put their piece in the Sub-Board that corresponds to the tile that Player 2 had placed their piece
+   
 • Then repeat...
