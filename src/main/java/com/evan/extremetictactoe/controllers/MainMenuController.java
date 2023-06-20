@@ -1,6 +1,7 @@
 package com.evan.extremetictactoe.controllers;
 
 import com.evan.extremetictactoe.Game;
+import com.evan.extremetictactoe.setting.SettingManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +20,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import org.util.glowlib.setting.SettingManager;
 
 import java.io.File;
 import java.io.IOException;

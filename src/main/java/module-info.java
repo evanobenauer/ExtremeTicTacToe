@@ -10,7 +10,6 @@ module com.evan.extremetictactoe {
     requires org.kordamp.bootstrapfx.core;
     //requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires GlowLib;
 
     opens com.evan.extremetictactoe to javafx.fxml;
     exports com.evan.extremetictactoe;

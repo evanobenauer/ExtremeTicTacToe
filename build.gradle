@@ -19,8 +19,8 @@ ext {
     junitVersion = '5.9.1'
 }
 
-sourceCompatibility = '18'
-targetCompatibility = '18'
+sourceCompatibility = '16'
+targetCompatibility = '16'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -47,14 +47,14 @@ dependencies {
     }
     implementation('org.kordamp.ikonli:ikonli-javafx:12.3.1')
     implementation('org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0')
-    implementation('eu.hansolo:tilesfx:17.1.9') {
-        exclude(group: 'org.openjfx')
-    }
+    //implementation('eu.hansolo:tilesfx:17.1.9') {
+    //    exclude(group: 'org.openjfx')
+    //}
     implementation('com.github.almasb:fxgl:17.1') {
         exclude(group: 'org.openjfx')
     }
 
-    implementation 'com.github.evanobenauer:GlowLib:1.0.8'
+    //implementation 'com.github.evanobenauer:GlowLib:1.0.8'
 
 }
 
