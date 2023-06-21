@@ -1,7 +1,7 @@
 package com.evan.extremetictactoe.controllers;
 
+import com.ejo.glowlib.setting.SettingManager;
 import com.evan.extremetictactoe.Game;
-import com.evan.extremetictactoe.setting.SettingManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

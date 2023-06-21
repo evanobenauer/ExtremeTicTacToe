@@ -1,6 +1,6 @@
 package com.evan.extremetictactoe;
 
-import com.evan.extremetictactoe.setting.SettingManager;
+import com.ejo.glowlib.setting.SettingManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

@@ -1,10 +1,10 @@
 package com.evan.extremetictactoe;
 
+import com.ejo.glowlib.misc.Container;
+import com.ejo.glowlib.setting.Setting;
 import com.evan.extremetictactoe.board.*;
 import com.evan.extremetictactoe.board.util.FXTranslator;
 import com.evan.extremetictactoe.controllers.Actions;
-import com.evan.extremetictactoe.setting.Container;
-import com.evan.extremetictactoe.setting.Setting;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
